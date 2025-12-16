@@ -1,0 +1,29 @@
+{"[latex]": {
+        "editor.wordWrap": "on"
+    },
+    "[tex]": {
+        "editor.wordWrap": "on"
+    },
+    // Tell LaTeX Workshop to put all output files in a 'build' folder
+    "latex-workshop.latex.outDir": "%DIR%/build",
+    
+    // Optional: Auto-clean files you don't need even in the build folder
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux", "*.bbl", "*.blg", "*.idx", "*.ind", "*.lof", "*.lot", "*.out", "*.toc", "*.acn", "*.acr", "*.alg", "*.glg", "*.glo", "*.gls", "*.ist", "*.fls", "*.log", "*.fdb_latexmk"
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%", // <--- This is the magic line
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+}
