@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1765913549.32211 "/mnt/c/Users/landr/OneDrive - Universidad de Concepción/2025-2/GVD/ProySem/mgvd-ProySem/report/test.tex" "build/test.pdf" "test" 1765913552.17969 0
+["pdflatex"] 1765920650.47164 "/mnt/c/Users/landr/OneDrive - Universidad de Concepción/2025-2/GVD/ProySem/mgvd-ProySem/report/test.tex" "build/test.pdf" "test" 1765920655.50359 0
   "/etc/texmf/web2c/texmf.cnf" 1764951251.14686 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/mnt/c/Users/landr/OneDrive - Universidad de Concepción/2025-2/GVD/ProySem/mgvd-ProySem/report/test.tex" 1765913545.85929 21387 0d3ed220ebfe32351f98d40eca1b7163 ""
+  "/mnt/c/Users/landr/OneDrive - Universidad de Concepción/2025-2/GVD/ProySem/mgvd-ProySem/report/test.tex" 1765920650.1517 21694 41e142c8c7af85b3dedd47c957782894 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -205,8 +205,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1764951288.97675 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1764951411 8216073 09b9ab98121503db87878aa7dca65200 ""
-  "build/test.aux" 1765913551.84082 5070 43ba06b1529dda09646fd70178e564b6 "pdflatex"
-  "build/test.out" 1765913551.85828 1816 f1958e2315d90d1361e0ac6b58934f55 "pdflatex"
+  "build/test.aux" 1765920655.19046 5070 43ba06b1529dda09646fd70178e564b6 "pdflatex"
+  "build/test.out" 1765920655.19697 1816 f1958e2315d90d1361e0ac6b58934f55 "pdflatex"
   "images/experiments.pdf" 1765909266.8027 17332 608b3620f654a756c43fb0c1bf1f2c9f ""
   "images/fullvsannu_10.pdf" 1765908338.83452 129691 d7c0d10bc0b76f00f958d0f01749ec9a ""
   "images/fullvsannu_20.pdf" 1765908346.39763 126903 2109459cbeb360eebabe33d23115a07e ""
@@ -217,7 +217,7 @@
   "images/optimal_annular.png" 1765896290.4325 30824 ef85c0aa48d5080e21e2e330e6537dbe ""
   "images/optimal_full.png" 1765896308.05995 35316 002091aaa15480da17d8ca6e26d7e3fe ""
   "images/snrs.png" 1765866440.63796 26210 02b04b72de198f1386571ac0cf9a2f08 ""
-  "test.tex" 1765913545.85929 21387 0d3ed220ebfe32351f98d40eca1b7163 ""
+  "test.tex" 1765920650.1517 21694 41e142c8c7af85b3dedd47c957782894 ""
   (generated)
   "build/test.aux"
   "build/test.log"
