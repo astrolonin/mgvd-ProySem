@@ -1,6 +1,6 @@
 #%%
 
-#The program requires to have installed the "vip_hci"
+#The program requires the "vip_hci" library
 #pip install vip_hci
 
 import numpy as np
