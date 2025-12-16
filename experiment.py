@@ -1,6 +1,6 @@
 #%%
 
-#The program requires to have installed the "vip_hci"
+#The program requires the "vip_hci" library
 #pip install vip_hci
 
 import numpy as np
@@ -42,6 +42,7 @@ ax.plot(ncomps,snrs_full, 'o-', alpha=0.5, label='full-frame')
 ax.plot(ncomps,snrs_annu, 'o-', alpha=0.5, label='annular')
 ax.set_xlabel('Principal components'); ax.set_ylabel('S/N ratio')
 ax.legend()
+plt.savefig('images/snrs.pdf', bbox_inches='tight', dpi=500)
 
 #%%
 
@@ -94,7 +95,7 @@ for ncomp in ncomps:
     fig.colorbar(im1, ax=ax1), fig.colorbar(im2,ax=ax2)
     ax1.set_title('PCA full-frame',fontsize=15); ax2.set_title('PCA annular', fontsize=15)
     fig.suptitle('ncomp: '+str(ncomp), fontsize=20)
-    plt.savefig('fullvsannu_'+str(ncomp)+'.pdf', bbox_inches='tight', dpi=500)
+    plt.savefig('images/fullvsannu_'+str(ncomp)+'.pdf', bbox_inches='tight', dpi=500)
 
 #takes all of the snr values and plots them in three axes, one for each source
 fig, (ax1,ax2,ax3) = plt.subplots(3,1, figsize=(5,8), layout='constrained')
@@ -105,4 +106,4 @@ ax3.plot(ncomps, ff_snrs_nb, 'o-', label='full-frame') ; ax3.plot(ncomps, an_snr
 ax1.legend(); ax2.legend(); ax3.legend()
 ax1.set_xlabel('ncomp'), ax2.set_xlabel('ncomp'), ax3.set_xlabel('ncomp')
 ax1.set_ylabel('SNR'), ax2.set_ylabel('SNR'), ax3.set_ylabel('SNR')
-plt.savefig('experiments.pdf', bbox_inches='tight', dpi =500)
+plt.savefig('images/experiments.pdf', bbox_inches='tight', dpi =500)
