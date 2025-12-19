@@ -23,6 +23,7 @@ plsc = VLT_NACO['plsc']                                                 #obtain 
 
 #%%
 
+print('Running first detection for Beta Pictoris...')
 ncomps = range(1,50,2)
     
 #applies pca for each ncomp value and stores the snr at the location of the planet
@@ -44,13 +45,16 @@ ax.set_xlabel('Principal components'); ax.set_ylabel('S/N ratio')
 ax.legend()
 plt.savefig('images/snrs.pdf', bbox_inches='tight', dpi=500)
 
-#%%
+print('PC vs. SNR plot generated at "images/srns.pdf"\n')
 
+#%%
+print('Injecting test planets...')
 #these are the "real" coordinates and flux of the planet
 #used to delete it from the cube
 r_b =  0.452/plsc # Absil et al. (2013)
 theta_b = 211.2+90 # Absil et al. (2013)
 f_b = 648.2
+
 
 #create a new cube without real planets
 cube_inj = cube_planet_free([(r_b, theta_b, f_b)], cube, angs, psfn=psfn)
@@ -74,6 +78,8 @@ ncomps = [10,20,30,40,50,60]
 ff_snrs_fb = []; ff_snrs_fd = []; ff_snrs_nb = []
 an_snrs_fb = []; an_snrs_fd = []; an_snrs_nb = []
 
+print('Running PCA for all sources...')
+
 #applies both pca types with each ncomp value, adds the snr value to the respective
 #arrays and plots the resulting image for visual appreciation of the planets
 for ncomp in ncomps:
@@ -96,6 +102,7 @@ for ncomp in ncomps:
     ax1.set_title('PCA full-frame',fontsize=15); ax2.set_title('PCA annular', fontsize=15)
     fig.suptitle('ncomp: '+str(ncomp), fontsize=20)
     plt.savefig('images/fullvsannu_'+str(ncomp)+'.pdf', bbox_inches='tight', dpi=500)
+print('Filtered frames generated at "images/fullvsannu_*.pdf"')
 
 #takes all of the snr values and plots them in three axes, one for each source
 fig, (ax1,ax2,ax3) = plt.subplots(3,1, figsize=(5,8), layout='constrained')
@@ -107,3 +114,4 @@ ax1.legend(); ax2.legend(); ax3.legend()
 ax1.set_xlabel('ncomp'), ax2.set_xlabel('ncomp'), ax3.set_xlabel('ncomp')
 ax1.set_ylabel('SNR'), ax2.set_ylabel('SNR'), ax3.set_ylabel('SNR')
 plt.savefig('images/experiments.pdf', bbox_inches='tight', dpi =500)
+print('PC vs. SNR plot for all sources generated at "images/experiment.pdf"')
