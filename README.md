@@ -1,4 +1,4 @@
-# Análisis explotario de PCA para detección de exoplanetas
+# Análisis exploratorio de PCA para detección de exoplanetas
 
 ## Requerimientos
 
