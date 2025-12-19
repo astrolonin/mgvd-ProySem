@@ -17,7 +17,7 @@ matplotlib
 
 ## Ejecución
 
-El programa se ejecuta una sola vez y reproduce exactamente lo especificado en la presentación. Mayores cambios requeriría modificaciones en el código. Esto resultará sencillo, el código está comentado y estructurado de manera modular. Se recomienda utilizar `Spyder` para editarlo.
+El programa se ejecuta una sola vez y reproduce exactamente lo especificado en la presentación. Mayores cambios requerirían modificaciones en el código. El código está comentado y estructurado en "celdas", por lo que se recomienda utilizar `Spyder` para editarlo.
 
 ```bash
 python experiment.py
